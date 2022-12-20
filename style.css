@@ -17,7 +17,7 @@ body {
   backdrop-filter: blur(5px);
 }
 
-a,ul,li,h1  {
+a,ul,li,h1,h2,h4,h5,h6,p  {
   list-style: none;
   text-decoration: none;
   color: inherit;
@@ -205,14 +205,24 @@ li:hover::before {
   padding: 40px;
 }
 
-.about-contents > div {
-  padding: 4px 8px;
-  border-radius: 20px;
-  margin: 8px 0;
-  backdrop-filter: blur(10px);
-  background: linear-gradient(-45deg, #ee765220, #e73c7e20, #23a5d519, #23d5ab19);
-  background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+.about-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+  gap: 40px;
+}
+
+.about-contents .d1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+}
+
+.h3 {
+  margin-bottom: 10px !important;
 }
 
 @keyframes gradient {
@@ -249,6 +259,46 @@ li:hover::before {
 	animation: gradient 15s ease infinite;
   border-radius: 15px;
   padding: 40px;
+}
+
+.pro-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+  gap: 40px;
+}
+
+.p1 img{
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+#conSec {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.con-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    width: 85%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.053);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.con-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 
