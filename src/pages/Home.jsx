@@ -4,9 +4,9 @@ import Project from '../components/Project'
 
 const Home = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25, duration: 0.5, ease: 'easeOut' }} className='px-[18vw] w-[100%]'>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25, duration: 0.5, ease: 'easeOut' }} className='px-[4vw] md:px-[18vw] w-[100%]'>
       {/* My img & Intro */}
-      <div className='flex justify-center items-start gap-2 '>
+      <div className='flex flex-col xl:flex-row justify-center items-center xl:items-start gap-2 '>
         <motion.img initial={{ x: '-2000px' }} animate={{ x: '0px' }} transition={{ delay: 0.25, duration: 0.5, ease: 'easeOut' }} className='h-64 rounded-lg bckdrp p-4' src="/dp.jpg" alt="photo" />
         <div className='flex flex-col gap-2'>
           <motion.h1 initial={{ x: '2000px' }} animate={{ x: '0px' }} transition={{ delay: 0.5, duration: 0.6, ease: 'easeOut' }} className='text-5xl font-bold bckdrp p-4'>Hello, I am Jitender Kumar</motion.h1>
@@ -16,7 +16,7 @@ const Home = () => {
         </div>
       </div>
       {/* Tech Stack */}
-      <motion.div initial={{ x: '-2000px' }} animate={{ x: '0px' }} transition={{ delay: 0.5, duration: 0.6, ease: 'easeOut' }} className='flex justify-center items-center gap-4 mt-2 bckdrp p-4'>
+      <motion.div initial={{ x: '-2000px' }} animate={{ x: '0px' }} transition={{ delay: 0.5, duration: 0.6, ease: 'easeOut' }} className='flex justify-center items-center gap-4 mt-2 bckdrp p-4 flex-wrap'>
         <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.6, duration: 0.6, ease: 'easeOut' }} className='h-14' src="/html5.svg" alt="html" />
         <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 0.6, ease: 'easeOut' }} className='h-14' src="/css3.svg" alt="" />
         <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.4, duration: 0.6, ease: 'easeOut' }} className='h-14' src="/javascript.svg" alt="" />
@@ -36,7 +36,7 @@ const Home = () => {
 
       </motion.div>
       {/* Education & Experience */}
-      <div className='grid grid-cols-2 gap-2 mt-2  '>
+      <div className='grid md:grid-cols-2 gap-2 mt-2  '>
         <motion.div initial={{ x: '2000px' }} animate={{ x: '0px' }} transition={{ delay: 0.5, duration: 0.6, ease: 'easeOut' }} className='bckdrp p-4'>
           <h2 className='text-2xl font-semibold'>Education</h2>
           <div className='py-4'>
@@ -60,7 +60,7 @@ const Home = () => {
         </motion.div>
       </div>
       {/* Projects */}
-      <div className='grid grid-cols-2 gap-2 mt-2 h-full '>
+      <div className='grid md:grid-cols-2 gap-2 mt-2 h-full '>
         <Project name='CoinTracker' img='ct.jpg' live='https://cointracker-q7ta.onrender.com/' repo='https://github.com/ohyajk/cointracker' />
         <Project name='EventCalendar' img='calendar.jpg' live='https://event-calendar-app.onrender.com/' repo='https://github.com/ohyajk/Event-Calender-App' />
 
@@ -68,7 +68,7 @@ const Home = () => {
       {/* Contact Me */}
       <motion.div initial={{ x: '2000px' }} animate={{ x: '0px' }} transition={{ delay: 0.5, duration: 0.6, ease: 'easeOut' }} className='bckdrp p-4 mt-2 text-center'>
         <h2 className='text-2xl font-semibold'>Contact Me</h2>
-        <div className='flex justify-center items-center gap-2'>
+        <div className='flex justify-center items-center gap-2 flex-wrap'>
         <a className='px-4 py-2 bckdrp hover:bg-black/50 flex justify-start items-center gap-2 mt-2' href='' target='_blank'><i class="fa-solid fa-envelope fa-2x"></i><span>Ohyajk@Gmail.com</span></a>
         <a className='px-4 py-2 bckdrp hover:bg-black/50 flex justify-start items-center gap-2 mt-2' href='' target='_blank'><i class="fa-brands fa-linkedin fa-2x"></i><span>@Ohyajk</span></a>
         <a className='px-4 py-2 bckdrp hover:bg-black/50 flex justify-start items-center gap-2 mt-2' href='https://github.com/ohyajk' target='_blank'><i class="fa-brands fa-github fa-2x"></i><span>@Ohyajk</span></a>
