@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: white;
+  background: linear-gradient(113.49deg, #b8401e -30.3%, #181E41 58.12%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+}
+
+a,
+ul,
+li,
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+}
+
+li::before {
+  content: "";
+  background: linear-gradient(45deg, #ee7652, #e73c7e, #23a5d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+  transition: 0.4s ease-out;
+  width: 0%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+li:hover::before {
+  width: 100%;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+.bckdrp {
+  background: linear-gradient(45deg, rgba(238, 118, 82, 0.1), rgba(231, 60, 126, 0.1), rgba(35, 165, 213, 0.1), rgba(35, 213, 171, 0.1));
+  /* background: rgba(255, 255, 255, 0.1); */
+  box-shadow: 0 8px 32px 0 rgba(5, 5, 17, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: gradient 2s ease infinite;
+}
