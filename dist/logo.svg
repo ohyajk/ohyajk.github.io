@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7e00ff;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-5" y="3" width="56" height="48" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-1" dy="1.732" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.97"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="1.96875" y="6.625" width="43.5" height="35.75" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDMuNSIgaGVpZ2h0PSIzNS43NSIgdmlld0JveD0iMCAwIDQzLjUgMzUuNzUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzQuMjY2IiB5MT0iMzUuNzUiIHgyPSI5LjIzNCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM2MTg4YjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE3MiIgc3RvcC1jb2xvcj0iIzYxODhiMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMTc4IiBzdG9wLWNvbG9yPSIjMTAxYzNiIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC4yMjIiIHN0b3AtY29sb3I9IiMxYzY2OWEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjI4OSIgc3RvcC1jb2xvcj0iI2VjZjhmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMzI3IiBzdG9wLWNvbG9yPSIjZmZkMGM1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC4zODEiIHN0b3AtY29sb3I9IiM5YzUzYWUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjQ1NCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDU2IiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC42MTEiIHN0b3AtY29sb3I9IiMzNzlkYjMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjcyMSIgc3RvcC1jb2xvcj0iIzAwMzM2YyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNzY0IiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDMuNSIgaGVpZ2h0PSIzNS43NSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <g style="fill: #7e00ff; filter: url(#filter)">
+    <path id="J" class="cls-1" d="M36.522,41.684a10.635,10.635,0,0,0,1.918-1.69,14.554,14.554,0,0,0,1.592-2.112,5.389,5.389,0,0,0,.813-2.015l4.615-29.25H26.544a6.467,6.467,0,0,0,.78,2.178,20.4,20.4,0,0,0,1.4,2.242q0.746,1.041,1.365,1.82a5.79,5.79,0,0,1,.617.845l-2.795,17.42a1.664,1.664,0,0,1-.39.78,0.889,0.889,0,0,1-.65.39H3.6L1.974,42.366h32.7A3.382,3.382,0,0,0,36.522,41.684Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#J" style="stroke: #000; filter: none; fill: none"/>
+</svg>
