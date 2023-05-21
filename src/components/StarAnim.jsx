@@ -2,7 +2,7 @@ import React from 'react'
 
 const StarAnim = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" className='absolute top-0 h-full w-full opacity-70' width="1926" height="1098" preserveAspectRatio="xMidYMid" viewBox="0 0 1926 1098">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" className='absolute bg-cover top-0 h-full w-full opacity-70' preserveAspectRatio="xMidYMid" viewBox="0 0 1926 1098">
             <g transform="translate(963,549) scale(1,1) translate(-963,-549)"><g transform="translate(1890.9594489630804 695.7481478865427)">
                 <animateTransform attributeName="transform" type="translate" repeatCount="indefinite" calcMode="spline" keySplines="1 0 1 0" values="963 549;2818.9188979261608 842.4962957730853" keyTimes="0;1" dur="20s" begin="-16.23554119125998s"></animateTransform>
 

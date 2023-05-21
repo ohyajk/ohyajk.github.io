@@ -10,6 +10,9 @@ module.exports = {
         'primary': '#ff3333',
         'secondry': '#cc3333',
         'bgbg': '#050505',
+      },
+      screens: {
+        'xs': '375px',
       }
     },
   },
