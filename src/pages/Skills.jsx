@@ -22,7 +22,7 @@ const Skills = () => {
                             return (
                                 <motion.span initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { type: "spring", bounce: 0.2, duration: 0.3, } }} viewport={{ amount: 0.2 }}
                                     className='flex flex-col justify-center items-center gap-2 hover:bg-white/20 p-2 rounded-xl backdrop-blur-lg cursor-pointer'>
-                                    <img className='h-16' src={s.img + '.svg'} alt={s.name} />
+                                    <img className='h-12 md:h-16' src={s.img + '.svg'} alt={s.name} />
                                     <h2 className='md:text-xl'>{s.name}</h2>
                                 </motion.span>
                             )

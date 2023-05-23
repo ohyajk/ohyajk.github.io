@@ -42,3 +42,20 @@
   background-color: var(--thumb);
   border: 3px solid var(--track);
 }
+
+.bg-anim {
+  background: rgba(156, 156, 156, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(156, 156, 156, 0.43);
+}
+
+.bg-anim2 {
+  background: rgba(101, 101, 101, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 0, 0, 0.43);
+}

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import StarAnim from '../components/StarAnim'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
+import { PopContext } from '../context/PopContext'
 
 const Home = () => {
 
@@ -12,6 +13,8 @@ const Home = () => {
     deleteSpeed: 80,
   })
 
+  const { toggleEmailPop } = useContext(PopContext);
+
 
   return (
     <div className='relative w-full h-screen flex flex-col justify-center items-center z-10 border-b border-secondry' >
@@ -19,7 +22,7 @@ const Home = () => {
       <motion.h1 initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.2, delay: 1.3 } }} viewport={{ amount: 1 }} className='text-5xl xs:text-6xl sm:text-7xl md:text-8xl uppercase text-center text-primary'>Jitender kumar</motion.h1>
 
       <motion.h4 initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.2, delay: 1.7 } }} viewport={{ amount: 1 }} className='text-3xl xs:text-4xl sm:text-5xl md:text-6xl uppercase flex justify-center'><span className=' ml-4 w-[300px] xs:w-[350px] sm:w-[460px] md:w-[580px]'>I am a {text}<Cursor /></span></motion.h4>
-      <motion.button initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.2, delay: 2 } }} viewport={{ amount: 1 }} className='mt-4 text-primary hover:bg-primary hover:text-white animate-pulse hover:animate-none hover:scale-110 text-xl border-2 border-primary px-4 py-2 text-center rounded-lg bg-bgbg'>Let's Get In  Touch</motion.button>
+      <motion.button onClick={toggleEmailPop} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.2, delay: 2 } }} viewport={{ amount: 1 }} className='mt-4 text-primary hover:bg-primary hover:text-white animate-pulse hover:animate-none hover:scale-110 text-xl border-2 border-primary px-4 py-2 text-center rounded-lg bg-bgbg'>Let's Get In  Touch</motion.button>
 
       <StarAnim />
     </div>

@@ -5,7 +5,10 @@ import BarLoader from "react-spinners/BarLoader";
 import { AnimatePresence, motion } from "framer-motion";
 import Skills from "./pages/Skills";
 import Tools from "./pages/Tools";
-
+import Projects from "./pages/Projects";
+import Popup from "./components/Popup";
+import { PopContext } from "./context/PopContext";
+import { useContext } from 'react';
 
 function App() {
 
@@ -17,6 +20,9 @@ function App() {
       setLoading(false)
     }, 5000)
   }, [])
+
+  const { emailPop } = useContext(PopContext);
+
 
   return (
     <main>
@@ -43,6 +49,8 @@ function App() {
             <About />
             <Skills />
             <Tools />
+            <Projects />
+            {emailPop ? <Popup /> : ''}
           </motion.div>
         </AnimatePresence>
       }
