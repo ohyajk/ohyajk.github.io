@@ -3,6 +3,8 @@ import About from "./pages/About"
 import Home from "./pages/Home"
 import BarLoader from "react-spinners/BarLoader";
 import { AnimatePresence, motion } from "framer-motion";
+import Skills from "./pages/Skills";
+import Tools from "./pages/Tools";
 
 
 function App() {
@@ -21,7 +23,7 @@ function App() {
 
       <AnimatePresence>
         {loading &&
-          <motion.section initial={{ opacity: 0, x: -1000 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 1000 }} transition={{ duration: '1' }} className="overflow-hidden z-50 flex flex-col gap-2 justify-center items-center h-screen w-full animate-pulse">
+          <motion.section initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, }} transition={{ duration: '0.2' }} className="overflow-hidden z-50 flex flex-col gap-2 justify-center items-center h-screen w-full animate-pulse">
             <BarLoader
               color={"#ff3333"}
               loading={loading}
@@ -36,9 +38,11 @@ function App() {
 
       {!loading &&
         <AnimatePresence>
-          <motion.div initial={{ opacity: 0, x: -1000 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 1000 }} transition={{ duration: '1', delay: '0.4' }}>
+          <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0 }} transition={{ duration: '0.2', delay: '0.2' }}>
             <Home />
             <About />
+            <Skills />
+            <Tools />
           </motion.div>
         </AnimatePresence>
       }
