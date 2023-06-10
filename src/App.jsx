@@ -9,6 +9,8 @@ import Projects from "./pages/Projects";
 import Popup from "./components/Popup";
 import { PopContext } from "./context/PopContext";
 import { useContext } from 'react';
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
 
 
   return (
-    <main>
+    <main className="relative" >
 
       <AnimatePresence>
         {loading &&
@@ -50,6 +52,7 @@ function App() {
             <Skills />
             <Tools />
             <Projects />
+            <Footer />
             {emailPop ? <Popup /> : ''}
           </motion.div>
         </AnimatePresence>

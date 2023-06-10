@@ -21,7 +21,7 @@ const Projects = () => {
     const [selPort, setSelPort] = useState({})
 
     return (
-        <section className='relative'>
+        <section id='projects' className='relative'>
             < div className='flex flex-col justify-center items-center gap-12 py-12 md:py-16'>
                 <motion.h2
                     initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { type: "spring", bounce: 0.2, duration: 0.3, } }} viewport={{ amount: 0.2 }}

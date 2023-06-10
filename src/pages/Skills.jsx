@@ -6,7 +6,7 @@ const Skills = () => {
     const skill = [{ name: 'HTML5', img: '/html5' }, { name: 'CSS3', img: '/css3' }, { name: 'Javascript', img: '/javascript' }, { name: 'React', img: '/react' }, { name: 'TailwindCSS', img: '/tailwindcss' }, { name: 'Redux', img: '/redux' }, { name: 'Node Js', img: '/node-js' }, { name: 'Express Js', img: '/expressjs' }, { name: 'MongoDb', img: '/mongodb' },]
 
     return (
-        <section className='relative'>
+        <section id='skills' className='relative'>
             < div className='flex flex-col justify-center items-center gap-12 py-12 md:py-16'>
                 <motion.h2
                     initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { type: "spring", bounce: 0.2, duration: 0.3, } }} viewport={{ amount: 0.2 }}

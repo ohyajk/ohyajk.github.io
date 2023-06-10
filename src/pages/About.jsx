@@ -6,7 +6,7 @@ const About = () => {
 
 
     return (
-        <section className='relative'>
+        <section id='about' className='relative'>
 
             < div className='relative flex flex-col justify-center items-center gap-12 py-12 md:py-16'>
                 <motion.h2 initial={{ opacitscale: 1, scale: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.3, } }} viewport={{ amount: 0.2 }} className='text-4xl md:text-6xl'>

@@ -17,7 +17,7 @@ const Home = () => {
 
 
   return (
-    <div className='relative w-full h-screen flex flex-col justify-center items-center z-10 border-b border-secondry' >
+    <div id='home' className='relative w-full h-[calc(100vh)] flex flex-col justify-center items-center z-10 border-b border-secondry' >
       <motion.h2 initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.2, delay: 1 } }} viewport={{ amount: 1 }} className='text-4xl xs:text-5xl sm:text-6xl md:text-7xl uppercase text-center'>Hello I am</motion.h2>
       <motion.h1 initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, transition: { type: "tween", bounce: 0.2, duration: 0.2, delay: 1.3 } }} viewport={{ amount: 1 }} className='text-5xl xs:text-6xl sm:text-7xl md:text-8xl uppercase text-center text-primary'>Jitender kumar</motion.h1>
 
