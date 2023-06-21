@@ -17,7 +17,7 @@ const Popup = () => {
                 <input autoComplete='none' className='px-4 py-2 outline-none w-full' type="email" name="email" id="email" placeholder='Your Email' required />
                 
                 <textarea autoComplete='none' className='px-4 py-2 outline-none w-full' placeholder='Add Message' rows="4" id="message" name="message" required></textarea>
-                    <button type="submit" disabled={state.submitting} className='px-4 py-2 w-full bg-primary hover:scale-105'>Submit</button>
+                    <button type="submit" className='px-4 py-2 w-full bg-primary hover:scale-105'>Submit</button>
                 <img onClick={toggleEmailPop} className='absolute right-2 top-2 h-10 cursor-pointer hover:scale-125' src="/cross.png" alt="cross" />
             </form>
         </section>
