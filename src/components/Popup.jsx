@@ -6,11 +6,10 @@ import { useForm, ValidationError } from '@formspree/react';
 const Popup = () => {
 
     const { toggleEmailPop } = useContext(PopContext);
-    const [state, handleSubmit] = useForm("xoqzowgr");
 
     return (
         <section className='fixed  top-0 left-0 h-full bg-anim2 w-full z-50 flex flex-col justify-center items-center'>
-            <form onSubmit={handleSubmit} className='relative bg-bgbg p-8 flex flex-col justify-center items-center gap-4 w-[90%] sm:w-3/4 md:w-[42%] xl:w-1/4'>
+            <form action='https://submit-form.com/KnW9XQXZ' className='relative bg-bgbg p-8 flex flex-col justify-center items-center gap-4 w-[90%] sm:w-3/4 md:w-[42%] xl:w-1/4'>
                 <h2 className='text-4xl md:text-6xl'>
                     Contact Me
                     <hr className='h-2 w-full bg-secondry animate-pulse' />
