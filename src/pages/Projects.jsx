@@ -11,7 +11,7 @@ const Projects = () => {
         { name: 'Nike Store', img: '/nike-main.png', source: 'https://github.com/ohyajk/nike-store-frontend', demo: 'https://nike-store-frontend-git-dev-ohyajk.vercel.app/', bio: 'This is a shoe selling store.', tech: ['NextJs', 'Redux', 'Tailwindcss'] },
         { name: 'TweetShot', img: '/tweetshot-main.png', source: 'https://github.com/ohyajk/Tweetshot', demo: 'https://tweetshot.onrender.com/', bio: 'This is a Twitter tweet screenshot maker app.', tech: ['React', 'Redux', 'Tailwindcss'] },
         { name: 'Cloud Drive', img: '/clouddrive-main.png', source: 'https://github.com/ohyajk/clouddrive', demo: 'https://clouddrive-git-main-ohyajk.vercel.app/', bio: 'This is a image hosting platform.', tech: ['React', 'Cloudinary', 'tailwindcss'] },
-        { name: 'Zaap One Page', img: '/zaap-main.png', source: 'https://github.com/ohyajk/zaap', demo: 'https://darshzaap.vercel.app/', bio: 'This is a cloning done for client.', tech: ['NextJs', 'ReCharts' ,'Tailwindcss'] },
+        { name: 'Zaap One Page', img: '/zapp-main.png', source: 'https://github.com/ohyajk/zaap', demo: 'https://darshzaap.vercel.app/', bio: 'This is a cloning done for client.', tech: ['NextJs', 'ReCharts', 'Tailwindcss'] },
 
 
     ]
