@@ -14,7 +14,7 @@ const PortPop = ({ data }) => {
                     {data.name}
                     <hr className='h-2 w-full bg-secondry animate-pulse' />
                 </h2>
-                <img src={'/projects' + data.img + '.jpg'} alt={data.name} />
+                <img src={'/projects' + data.img} alt={data.name} />
                 <p className='text-lg'>{data.bio}</p>
                 <ul className='flex gap-2 justify-center items-center flex-wrap'>
                     {data.tech.map((t) => <li className='border-primary border-2 px-4 py-2 rounded-lg'>{t}</li>)}
