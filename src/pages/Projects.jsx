@@ -8,7 +8,7 @@ const Projects = () => {
     const project = [
 
 
-        { name: 'Coin Tracker', img: '/ct', source: 'https://github.com/ohyajk/cointracker', demo: 'https://cointracker-q7ta.onrender.com/', bio: 'This is a crypto listing app which shows live data of top 100 cryptos around the world.', tech: ['react', 'redux', 'tailwindcss'] },
+        { name: 'Nike Store', img: '/nike-main.png', source: 'https://github.com/ohyajk/nike-store-frontend', demo: 'https://nike-store-frontend-git-dev-ohyajk.vercel.app/', bio: 'This is a shoe selling store.', tech: ['NextJs', 'Redux', 'Tailwindcss'] },
         { name: 'Coin Tracker', img: '/ct', source: 'https://github.com/ohyajk/cointracker', demo: 'https://cointracker-q7ta.onrender.com/', bio: 'This is a crypto listing app which shows live data of top 100 cryptos around the world.', tech: ['react', 'redux', 'tailwindcss'] },
         { name: 'Coin Tracker', img: '/ct', source: 'https://github.com/ohyajk/cointracker', demo: 'https://cointracker-q7ta.onrender.com/', bio: 'This is a crypto listing app which shows live data of top 100 cryptos around the world.', tech: ['react', 'redux', 'tailwindcss'] },
         { name: 'Coin Tracker', img: '/ct', source: 'https://github.com/ohyajk/cointracker', demo: 'https://cointracker-q7ta.onrender.com/', bio: 'This is a crypto listing app which shows live data of top 100 cryptos around the world.', tech: ['react', 'redux', 'tailwindcss'] },
@@ -37,7 +37,7 @@ const Projects = () => {
                             return (
                                 <motion.span onClick={() => { setSelPort(p); togglePortPop() }} initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1, transition: { type: "spring", bounce: 0.2, duration: 0.3, } }} viewport={{ amount: 0.2 }}
                                     className='flex flex-col justify-center items-center gap-2 bg-anim mx-4 md:mx-0  md:px-4 pt-6 rounded-xl backdrop-blur-lg cursor-pointer hover:brightness-125 hover:grayscale'>
-                                    <img className='h-[200px] md:h-[250px] w-[90%] md:w-full' src={'/projects' + p.img + '.jpg'} alt={p.name} />
+                                    <img className='h-[200px] md:h-[250px] w-[90%] md:w-full' src={'/projects' + p.img} alt={p.name} />
                                     <h2 className='md:text-xl'>{p.name}</h2>
                                 </motion.span>
                             )
